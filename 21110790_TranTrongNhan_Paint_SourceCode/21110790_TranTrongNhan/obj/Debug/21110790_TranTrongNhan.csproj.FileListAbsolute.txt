@@ -1,0 +1,15 @@
+D:\Code\Win Programming\21110790_TranTrongNhan\bin\Debug\21110790_TranTrongNhan.exe.config
+D:\Code\Win Programming\21110790_TranTrongNhan\bin\Debug\21110790_TranTrongNhan.exe
+D:\Code\Win Programming\21110790_TranTrongNhan\bin\Debug\21110790_TranTrongNhan.pdb
+D:\Code\Win Programming\21110790_TranTrongNhan\obj\Debug\21110790_TranTrongNhan.csproj.AssemblyReference.cache
+D:\Code\Win Programming\21110790_TranTrongNhan\obj\Debug\21110790_TranTrongNhan.csproj.SuggestedBindingRedirects.cache
+D:\Code\Win Programming\21110790_TranTrongNhan\obj\Debug\_21110790_TranTrongNhan.Form1.resources
+D:\Code\Win Programming\21110790_TranTrongNhan\obj\Debug\_21110790_TranTrongNhan.Properties.Resources.resources
+D:\Code\Win Programming\21110790_TranTrongNhan\obj\Debug\21110790_TranTrongNhan.csproj.GenerateResource.cache
+D:\Code\Win Programming\21110790_TranTrongNhan\obj\Debug\21110790_TranTrongNhan.csproj.CoreCompileInputs.cache
+D:\Code\Win Programming\21110790_TranTrongNhan\obj\Debug\21110790_TranTrongNhan.exe
+D:\Code\Win Programming\21110790_TranTrongNhan\obj\Debug\21110790_TranTrongNhan.pdb
+D:\Code\Win Programming\21110790_TranTrongNhan\bin\Debug\21110790_TranTrongNhan.exe.manifest
+D:\Code\Win Programming\21110790_TranTrongNhan\bin\Debug\21110790_TranTrongNhan.application
+D:\Code\Win Programming\21110790_TranTrongNhan\obj\Debug\21110790_TranTrongNhan.exe.manifest
+D:\Code\Win Programming\21110790_TranTrongNhan\obj\Debug\21110790_TranTrongNhan.application
