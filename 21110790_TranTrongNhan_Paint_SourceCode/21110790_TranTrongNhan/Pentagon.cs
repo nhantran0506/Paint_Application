@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace _21110790_TranTrongNhan
 {
@@ -31,7 +32,7 @@ namespace _21110790_TranTrongNhan
 
         public override void UpdateCordinate()
         {
-            
+             
             MyPoint[2].Y = Start.Y + (End.Y - Start.Y) / 3; //  2 and 4 is right and left middle
             MyPoint[2].X = End.X;
             MyPoint[4].Y = MyPoint[2].Y;

@@ -179,6 +179,7 @@ namespace _21110790_TranTrongNhan
                         }
                         obj.isSelected = true;
                         dragStart = e.Location;
+                        
                     }                               
                 }
 
@@ -226,6 +227,11 @@ namespace _21110790_TranTrongNhan
 
                        
                         obj.UpdateDraging(e.Location, grabIdex);
+                        if(obj is Polygon)
+                        {
+                            Polygon tmp = (Polygon)obj;
+                            tmp.UpdateCordinate();
+                        }
                     }
 
                 }
@@ -243,11 +249,13 @@ namespace _21110790_TranTrongNhan
                     {
                         if (obj.isSelected && !(obj is Polygon))
                         {
+                            
                             obj.Start = new Point(obj.Start.X + dx, obj.Start.Y + dy);
                             obj.End = new Point(obj.End.X + dx, obj.End.Y + dy);
                         }
                         else if (obj.isSelected && obj is Polygon)
                         {
+                           
                             Polygon tmp = (Polygon)obj;
                             tmp.UpdatePara(dx, dy);
                         }
@@ -264,7 +272,16 @@ namespace _21110790_TranTrongNhan
             {
                 if (currentObject != null)
                 {
-                    currentObject.End = e.Location;
+
+                    if (currentObject is Circle || currentObject is FilledCircle)
+                    {
+                        currentObject.End = new Point(e.Location.X, currentObject.End.Y + e.Location.X - currentObject.End.X);
+
+                    }
+                    else
+                    {
+                        currentObject.End = e.Location;
+                    }
                     if (currentObject is Polygon polygon)
                     {
                         polygon.UpdateCordinate();
@@ -480,6 +497,18 @@ namespace _21110790_TranTrongNhan
 
             }
            
+        }
+
+        private void btn_circle_Click(object sender, EventArgs e)
+        {
+            isSelect = false;
+            currentObject = new Circle();
+        }
+
+        private void btn_filled_circle_click(object sender, EventArgs e)
+        {
+            isSelect = false;
+            currentObject = new FilledCircle();
         }
     }
 }

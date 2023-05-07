@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace _21110790_TranTrongNhan
 {
@@ -15,11 +16,14 @@ namespace _21110790_TranTrongNhan
         public virtual void UpdatePara(int dx, int dy)
         {
             Start = new Point(Start.X + dx, Start.Y + dy);
-            End = new Point(End.X + dx, End.Y + dy);
+           End = new Point(End.X + dx, End.Y + dy);
             for (int i = 0; i < MyPoint.Count(); i++)
             {
-                MyPoint[i] = new Point(MyPoint[i].X+dx, MyPoint[i].Y+dy);
-               
+                
+                MyPoint[i].X = MyPoint[i].X + dx;
+                MyPoint[i].Y = MyPoint[i].Y + dy;
+
+
             }
         }
     }
